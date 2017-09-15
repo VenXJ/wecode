@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" 
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd"> 
+<generatorConfiguration> 
+	<!-- maven RunAs Golas中添加 |mybatis-generator:generate|自动生成 -->
+	<!--数据库驱动包路径 -->
+	<classPathEntry location="D:/tools/mysql/mysql-connector-java-5.1.35-bin.jar"/>
+	<context id="ORATables" targetRuntime="MyBatis3"> 
+		
+		<!-- 注释 -->  
+        <commentGenerator >
+        	<property name="mergeable" value="false"></property>
+        	<!--关闭注释  false:不关闭 true:关闭注释 -->
+            <property name="suppressAllComments" value="false"/>
+            <!-- 关闭时间注释 -->
+            <property name="suppressDate" value="true" />
+        </commentGenerator>    
+		<!--数据库连接信息 -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/test" userId="root" password=""></jdbcConnection> 
+		<javaTypeResolver> 
+			<property name="forceBigDecimals" value="false"/> 
+		</javaTypeResolver> 
+		<!--生成的实体类包路径 -->
+		<javaModelGenerator targetPackage="com.code.wecode.core.model" targetProject="wecode\src\main\java">
+			<!-- 自动为每一个生成的类创建一个构造方法，构造方法包含了所有的field；而不是使用setter -->
+			<property name="constructorBased" value="false"/>
+			<!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
+			<property name="enableSubPackages" value="false"/> 
+			<!--是否创建一个不可变的类，如果为true，那么MBG会创建一个没有setter方法的类，取而代之的是类似constructorBased的类-->
+			<property name="immutable" value="false"/>
+			<!-- 设置是否在getter方法中，对String类型字段调用trim()方法 -->
+			<property name="trimStrings" value="true"/>
+		</javaModelGenerator> 
+		<!--生成xml mapper(sql 映射文件)文件 路径 -->
+		<sqlMapGenerator targetPackage="mapper" targetProject="wecode\src\main\resources"> 
+			<!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
+			<property name="enableSubPackages" value="false"/> 
+		</sqlMapGenerator> 
+		<!-- 生成的Dao接口 的包路径 -->
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.code.wecode.core.mapper" targetProject="wecode\src\main\java"> 
+			<property name="enableSubPackages" value="false"/> 
+		</javaClientGenerator> 
+		<!--对应数据库表名  schema:数据库命名空间  tableName:表名 -->
+		<!-- 如果不需要 example 则在table标签中添加   enableCountByExample="false"
+				enableUpdateByExample="false" enableDeleteByExample="false"
+				enableSelectByExample="false" selectByExampleQueryId="false"
+		-->
+		<table tableName="CODEUSER" domainObjectName="CodeUser" enableCountByExample="false" enableUpdateByExample="false"  
+                enableDeleteByExample="false" enableSelectByExample="false"  
+                selectByExampleQueryId="false"> 
+			<property name="useActualColumnNames" value="false"/> 
+		</table>
+	</context>
+</generatorConfiguration> 

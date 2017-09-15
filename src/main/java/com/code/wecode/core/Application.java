@@ -1,16 +1,17 @@
 package com.code.wecode.core;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
-import org.springframework.context.annotation.ImportResource;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 //@ServletComponentScan
 @SpringBootApplication
 @EnableTransactionManagement
+@MapperScan("com.code.wecode.core.mapper")
 public class Application extends SpringBootServletInitializer {
 
 	@Override
