@@ -29,12 +29,13 @@ body::-webkit-scrollbar-thumb {
  background:#999;
 }
 a {
-	cursor: pointer;
-	transition: all 0.30s ease-in-out;
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
+    color: #abb5b6;
+    display: block;
+    padding: 12px 16px;
+    position: relative;
+    text-decoration: none;
+    word-wrap: break-word;
+    background-color: transparent;
 }
 li {
 	display: list-item;
@@ -66,16 +67,33 @@ body, input, button, textarea, select {
 }
 /*导航样式开始*/
 .header {
+	clear: both;
 	position: fixed;
-	top: 0;
-	bottom: 0;
 	width: 100%;
 	background-color: #f6f6f6;
 	z-index: 99;
 	display: inline;
 	float: left;
+	font-size: 0.875rem;
+	background: #fff;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	text-align: center;
 }
-.header .logo a {
+.wrap {
+    margin: auto;
+    max-width: 1200px;
+}
+.header ul {
+	display: block;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.header li {
+	display: inline-block;
+	position: relative;
+}
+ .header .logo a {
 	display: inline;
 	overflow: hidden;
 	height: 50px;
@@ -83,6 +101,7 @@ body, input, button, textarea, select {
 	line-height: 50px;
 	background: #3399CC url(../images/logo.png) no-repeat 50% 50%;
 }
+/*
 .header .logo a {
 	-moz-transition: all 0.8s ease-in-out;
 	-webkit-transition: all 0.8s ease-in-out;
@@ -96,10 +115,7 @@ body, input, button, textarea, select {
 	-o-transform: rotate(360deg);
 	-ms-transform: rotate(360deg);
 	transform: rotate(360deg);
-}
-.header ul{
-	width: 100px;
-}
+} */
 .hidden-xs-nav, .header-xs-nav {
 	color: #444;
 	font-size: 16px;
