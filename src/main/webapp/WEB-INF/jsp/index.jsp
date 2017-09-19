@@ -29,7 +29,7 @@ window.onload = function() {
 </head>
 
 <body>
-<section class="container user-select">
+<div class="custom-background">
   <header>
     <div class="container header"><!--超小屏幕不显示-->
       <ul class="nav hidden-xs-nav">
@@ -41,47 +41,13 @@ window.onload = function() {
       <div class="wall"><a href="readerWall.html" target="_blank">读者墙</a> | <a href="tags.html" target="_blank">标签云</a></div> --%>
     </div>
   </header>
-  <div class="content-wrap"><!--内容-->
+  <div id="masthead" class="content-wrap"><!--内容-->
+  	<div class = "content-branding">
+  		<div class = "site-title">
+  			<a href="#">To Be Or Not To Be</a>
+  		</div>
+  	</div>
     <div class="content">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> <!--banner-->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="item active"> <a href="content.html" target="_blank"><img src="images/img1.jpg" alt="" /></a>
-            <div class="carousel-caption"> 欢迎来到个人技术博客技术博客，在这里可以看到网站前端和后端的技术等 </div>
-            <span class="carousel-bg"></span> </div>
-          <div class="item"> <a href="content.html" target="_blank"><img src="images/img2.jpg" alt="" /></a>
-            <div class="carousel-caption"> 欢迎来到个人技术博客技术博客，在这里可以看到网站前端和后端的技术等 </div>
-            <span class="carousel-bg"></span> </div>
-          <div class="item"> <a href="content.html" target="_blank"><img src="images/img3.jpg" alt="" /></a>
-            <div class="carousel-caption"> 欢迎来到个人技术博客技术博客，在这里可以看到网站前端和后端的技术等 </div>
-            <span class="carousel-bg"></span> </div>
-        </div>
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-      <!--/banner-->
-      <div class="content-block hot-content hidden-xs">
-        <h2 class="title"><strong>本周热门排行</strong></h2>
-        <ul>
-          <li class="large"><a href="content.html" target="_blank"><img src="images/img3.jpg" alt="">
-            <h3> 欢迎来到个人技术博客技术博客 </h3>
-            </a></li>
-          <li><a href="content.html" target="_blank"><img src="images/logo.jpg" alt="">
-            <h3> 欢迎来到个人技术博客技术博客,在这里可以看到网站前端和后端的技术等 </h3>
-            </a></li>
-          <li><a href="content.html" target="_blank"><img src="images/img2.jpg" alt="">
-            <h3> 欢迎来到个人技术博客技术博客,在这里可以看到网站前端和后端的技术等 </h3>
-            </a></li>
-          <li><a href="content.html" target="_blank"><img src="images/img1.jpg" alt="">
-            <h3> 欢迎来到个人技术博客技术博客，在这里可以看到网站前端和后端的技术等 </h3>
-            </a></li>
-          <li><a href="content.html" target="_blank"><img src="images/logo.jpg" alt="">
-            <h3> 欢迎来到个人技术博客技术博客，在这里可以看到网站前端和后端的技术等 </h3>
-            </a></li>
-        </ul>
-      </div>
       <div class="content-block new-content">
         <h2 class="title"><strong>最新文章</strong></h2>
         <div class="row">
@@ -118,9 +84,6 @@ window.onload = function() {
               <div class="news_bot col-sm-7 col-md-8"> <span class="tags visible-lg visible-md"> <a href="">本站</a> <a href="">个人技术博客</a> </span> <span class="look"> 共 <strong>2126</strong> 人围观，发现 <strong> 12 </strong> 个不明物体 </span> </div>
             </div>
           </div>
-       
-          
-          
          
         </div>
         <!--<div class="news-more" id="pagination">
@@ -174,7 +137,7 @@ window.onload = function() {
   </aside>
   <!--/右侧>992px显示-->
   <footer class="footer">POWERED BY &copy;<a href="#">个人技术博客 XXXXX.COM</a> ALL RIGHTS RESERVED &nbsp;&nbsp;&nbsp;<span><a href="http://www.mycodes.net/" target="_blank">源码之家</a></span> <span style="display:none"><a href="">网站统计</a></span> </footer>
-</section>
+</div>
 <div><a href="javascript:;" class="gotop" style="display:none;"></a></div>
 <!--/返回顶部--> 
 <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script> 
