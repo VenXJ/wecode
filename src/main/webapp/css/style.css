@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 a {
     color: #abb5b6;
     display: block;
-    padding: 12px 16px;
+    padding: 0px 16px;
     position: relative;
     text-decoration: none;
     word-wrap: break-word;
@@ -127,7 +127,7 @@ body, input, button, textarea, select {
 .content-branding {
     padding: 60px 0 65px;
     margin-right: 320px;
-    margin-left: 190px;
+    margin-left: 100px;
     max-width: 800px;
 }
 .hidden-xs-nav, .header-xs-nav {
@@ -228,7 +228,7 @@ body, input, button, textarea, select {
 }
 .content {
 	margin-right: 320px;
-	margin-left: 190px;
+	margin-left: 100px;
 	padding: 10px 20px 0;
 	min-height: 800px;
 	overflow: hidden;

@@ -37,16 +37,17 @@ window.onload = function() {
         <li class="active"><a href="index.html"><span class=""></span>首页</a></li>
         <li class="active"><a href="index.html"><span class=""></span>首页</a></li>
       </ul>
-      <%-- <div class="feeds"> <a class="feed feed-xlweibo" href="" target="_blank"><i></i>新浪微博</a> <a class="feed feed-txweibo" href="" target="_blank"><i></i>腾讯微博</a> <a class="feed feed-rss" href="" target="_blank"><i></i>订阅本站</a> <a class="feed feed-weixin" data-toggle="popover" data-trigger="hover" title="微信扫一扫" data-html="true" data-content="<img src='images/weixin.jpg' alt=''>" href="javascript:;" target="_blank"><i></i>关注微信</a> </div>
+      <%-- <div class=""> <a class="feed feed-xlweibo" href="" target="_blank"><i></i>新浪微博</a> <a class="feed feed-txweibo" href="" target="_blank"><i></i>腾讯微博</a> <a class="feed feed-rss" href="" target="_blank"><i></i>订阅本站</a> <a class="feed feed-weixin" data-toggle="popover" data-trigger="hover" title="微信扫一扫" data-html="true" data-content="<img src='images/weixin.jpg' alt=''>" href="javascript:;" target="_blank"><i></i>关注微信</a> </div>
       <div class="wall"><a href="readerWall.html" target="_blank">读者墙</a> | <a href="tags.html" target="_blank">标签云</a></div> --%>
     </div>
-  </header>
-  <div id="masthead" class="content-wrap"><!--内容-->
-  	<div class = "content-branding">
+    <div class = "content-branding">
   		<div class = "site-title">
-  			<a href="#">To Be Or Not To Be</a>
+  			<p><a href="#">寇德的个人博客</a></p>
   		</div>
   	</div>
+  </header>
+  <div id="masthead" class="content-wrap"><!--内容-->
+  	
     <div class="content">
       <div class="content-block new-content">
         <h2 class="title"><strong>最新文章</strong></h2>
@@ -57,7 +58,7 @@ window.onload = function() {
               <dl>
                 <dt> <a href="" target="_blank" > 个人技术博客技术博客正式上线！ </a> </dt>
                 <dd><span class="name"><a href="" title="由 个人技术博客 发布" rel="author">个人技术博客</a></span> <span class="identity"></span> <span class="time"> 2015-10-19 </span></dd>
-                <dd class="text">欢迎来到个人技术博客技术博客，在这里可以看到网站前端和后端的技术，还有CMS内容管理系统，包括但不限于这些还有CMS内容管理系统，包括但不限于这些。</dd>
+                <dd class="text">欢迎来到个人技术博客技术博客，在这里可以看到网站前端和后端的技术，还有CMS内容管理系统，包括但不限于这些还有CMS内容管理系统，包括但不限于这些。欢迎来到个人技术博客技术博客，在这里可以看到网站前端和后端的技术，还有CMS内容管理系统，包括但不限于这些还有CMS内容管理系统，包括但不限于这些。</dd>
               </dl>
               <div class="news_bot col-sm-7 col-md-8"> <span class="tags visible-lg visible-md"> <a href="">本站</a> <a href="">个人技术博客</a> </span> <span class="look"> 共 <strong>2126</strong> 人围观，发现 <strong> 12 </strong> 个不明物体 </span> </div>
             </div>
@@ -95,10 +96,10 @@ window.onload = function() {
   </div>
   <!--/内容-->
   <aside class="sidebar visible-lg"><!--右侧>992px显示-->
-    <div class="sentence"> <strong>每日一句</strong>
+    <section class="sentence"> <strong>每日一句</strong>
       <h2>2015年11月1日 星期日</h2>
       <p>你是我人生中唯一的主角，我却只能是你故事中的一晃而过得路人甲。</p>
-    </div>
+    </section>
     <div id="search" class="sidebar-block search" role="search">
       <h2 class="title"><strong>搜索</strong></h2>
       <form class="navbar-form" action="search.php" method="post">

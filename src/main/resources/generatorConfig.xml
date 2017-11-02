@@ -45,7 +45,7 @@
 				enableUpdateByExample="false" enableDeleteByExample="false"
 				enableSelectByExample="false" selectByExampleQueryId="false"
 		-->
-		<table tableName="CODEUSER" domainObjectName="CodeUser" enableCountByExample="false" enableUpdateByExample="false"  
+		<table tableName="CITY" domainObjectName="City" enableCountByExample="false" enableUpdateByExample="false"  
                 enableDeleteByExample="false" enableSelectByExample="false"  
                 selectByExampleQueryId="false"> 
 			<property name="useActualColumnNames" value="false"/> 
